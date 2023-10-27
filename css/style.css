@@ -3,98 +3,169 @@
     /* Por ejemplo que no hayan márgenes */
     margin: 0;
     /* Que tenga un tipo de letra en específico */
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Sección hero */
 .hero {
     background-image: url("/img/imagen-principal.jpg");
-    background-position: center;
+    background-position: top;
     /* Trata de mostrar el contenido completo de la imagen con respecto a la altura dada  */
-    background-size: contain;
+    background-size: cover;
 
     /* Se puede posicionar un elemento con respecto a otro */
     position: relative;
+
+    /* Dándole un altura predeterminado */
+    height: 525px;
+
+    /* Dándole un ancho específico */
+    width: 960px;
+
+    /* Utilizando la función clamp */
+    height: clamp(200px, 80vw, 80vh);
 }
 
 /* Diferencias entre relative y absolute: */
-/* Relative: Relativo a su posición original (Conserva su espacio original), Desplazamiento con respecto a su posición original (top, right, bottom, left), Tiene un contexto de apilamiento (Esto significa que los descendientes posicionados se apilan en relación al padre relativo). 
+/* Relative: Relativo a su posición original (Conserva su espacio original), Desplazamiento con respecto a su posición original (top, right, bottom, left), Tiene un contexto de apilamiento (Esto significa que los descendientes posicionados se apilan en relación al padre relativo).
    Absolute: Relativo a su elemento padre posicionado, Elimina el elemento del flujo normal, Se controla con propiedades con respecto a su padre  relativo (top, right, bottom, left), No crea un contexto de apilamiento. */
 
-.hero-title{
+.hero-title {
     /* Se posiciona relativamente a su padre */
-    position:absolute;
+    position: absolute;
     /* Se posiciona en la parte más arriba de su padre */
-    top: 0;
+    /* top: 0;*/
+    top: 36px;
     /* Se posiciona a la parte más derecha de su padre */
-    right: 0;
+    /* right: 0; */
+    left: 655px;
     /* Se le da en color */
     color: white;
     /* Se le especifica el tamaño */
-    font-size: 36px;
+    font-size: 64px;
     /* Se da un pequeño margen en la derecha */
-    margin-right: 20px;
+    /* margin-right: 20px; */
     /* Se le da un pequeño margen arriba */
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 
-.hero-text{
+.hero-text {
     position: absolute;
     /* Se posiciona en la parte más abajo del padre */
-    bottom: 0;
+    /* bottom: 0; */
+    top: 392px;
     /* Se posiciona a la parte más izquierda del padre */
-    left: 0;
+    /* left: 0; */
+    left: 47px;
     /* Se la da un color */
     color: white;
     /* Se le especifica un tamaño */
-    font-size: 24px;
+    font-size: 36px;
+    /* Se especifíca el grueso de la letra */
+    line-height: 42px;
+
     /* Se da un pequeño margen en la izquierda */
-    margin-left: 20px;
+    /* margin-left: 20px; */
+
     /* Se da un pequeño margen desde abajo */
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+
     /* Color defondo del texto */
-    background-color: #729afe7b;
+    background-color: #7299FE80;
     /* Margen interno */
     padding: 10px;
+
     /* Centrando el texto */
     text-align: center;
+
     /* Darle un borde en específico */
     border-radius: 10px;
 }
 
-.sobreMi{
+
+/* Section sobreMi */
+.sobreMi {
     position: relative;
-    height: 390px;
+    height: 424px;
+    width: 960px;
     background-color: #7299FE;
 }
 
-.sobreMi-title{
+.sobreMi-title {
     position: absolute;
     top: 0;
-    text-align: justify;
+    text-align: center;
     padding: 15px;
-    left: 15px;
+    left: 390px;
     color: #1D06A7;
     font-size: 36px;
 }
 
-.sobreMi-paragraph{
+.sobreMi-paragraph {
     position: absolute;
     padding: 30px;
     text-align: justify;
     color: white;
+    font-size: 14px;
+    line-height: 24px;
 }
 
-.sobreMi-button{
+.sobreMi-button {
     position: absolute;
     bottom: 50px;
     background-color: #D16FFF;
     left: 30px;
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 26.4px;
     color: white;
     border-radius: 10px;
     padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
+    top: 320px;
+    left: 390px;
+}
+
+/* Sección misSkills */
+.misSkills {
+    position: relative;
+    background-color: #9022FF;
+    width: 960px;
+    height: 424px;
+}
+
+.misSkills-title {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding: 15px;
+    left: 390px;
+    color: #26CC4B;
+    font-size: 36px;
+}
+
+
+.wraper-mis-skills {
+    position: absolute;
+    /* Divide en 3 columnas */
+    columns: 2;
+    /* Espacio entre las columnas */
+    column-gap: 220px;
+    top: 60px;
+}
+
+.wraper-mis-skills-elemento {
+    /* Espacio entre elementos verticalmente*/
+    margin-bottom: 20px;
+    /* Espacio entre elementos horizontalmente */
+    margin-left: 40px;
+    padding: 10px;
+}
+
+.misSkills-elemento-title {
+    font-size: 18px;
+    color: white;
+    padding: 10px;
 }
 
 /* Para el elemento progress */
@@ -105,22 +176,117 @@ progress[value] {
 
 /* Modificación del formato */
 progress[value]::-webkit-progress-bar {
-    border-radius: 10em;
+    border-radius: 10px;
     background: rgb(255, 253, 253);
+    height: 20px;
+    width: 403px;
 }
 
 progress[value]::-webkit-progress-value {
-    border-radius: 10em;
-    background: skyblue;
+    border-radius: 20px;
+    background: #57EFF9;
+    height: 20px;
+}
+
+/* Section Portafolio */
+
+.portafolio {
+    width: 960px;
+    background-color: #FFD233;
+    height: 424px;
+    position: relative;
+}
+
+.portafolio-title {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding: 15px;
+    left: 390px;
+    color:  #00AD84;
+    font-size: 36px;
+}
+
+.wraper-portafolio {
+    position: absolute;
+    /* Divide en 3 columnas */
+    columns: 4;
+    /* Espacio entre las columnas */
+    column-gap: 1px;
+    top: 100px;
+}
+
+.wraper-portafolio-elemento {
+    /* Espacio entre elementos verticalmente*/
+    margin-bottom: 20px;
+    /* Espacio entre elementos horizontalmente */
+    margin-left: 45px;
+    padding: 10px;
 }
 
 /* Tamaño predeterminado de imágenes en Portafolio y Clientes */
-.portafolio img{
-    width: 140px;
-    height: 92px;
+.portafolio img {
+    width: 160px;
+    height: 100px;
 }
 
-.clientes img{
+.clientes img {
     width: 178px;
     height: 69px;
+}
+
+/* Section  Cliente*/
+
+.clientes {
+    width: 960px;
+    background-color: #3F4E62;
+    height: 258px;
+    position: relative;
+}
+
+.clientes-title {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding: 15px;
+    left: 390px;
+    color: #ADFF28;
+    font-size: 36px;
+}
+
+.wraper-clientes {
+    position: absolute;
+    /* Divide en 3 columnas */
+    columns: 4;
+    /* Espacio entre las columnas */
+    column-gap: 10px;
+    top: 100px;
+    left: 35px;
+}
+
+.wraper-clientes-elemento {
+    /* Espacio entre elementos verticalmente*/
+    margin-bottom: 20px;
+    /* Espacio entre elementos horizontalmente */
+    margin-left: 10px;
+    padding: 10px;
+}
+
+/* Section Contacto*/
+
+.contacto {
+    width: 960px;
+    background-color: #1687A0;
+    height: 578px;
+    position: relative;
+}
+
+.contacto-title {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    padding: 15px;
+    left: 390px;
+    color: #FF1B1B;
+    font-size: 36px;
 }

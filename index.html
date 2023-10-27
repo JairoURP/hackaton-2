@@ -181,6 +181,7 @@
 
         <h2 class="contacto-title">Contacto</h2>
 
+<<<<<<< HEAD
         <form class="form-contacto">
             <input class="form-contacto-nombre" type="text" placeholder="Nombre">
             <input class="form-contacto-apellido" type="text" placeholder="Apellido">
@@ -190,6 +191,46 @@
             <textarea class="form-contacto-descripcion" cols="30" rows="10" placeholder="Descripción"></textarea>
             <br>
             <button class="form-contacto-enviar">ENVIAR</button>
+=======
+        <form action="/action.php" method="post">
+            <fieldset class="">
+                <legend>
+                    Contáctame llenando todos los campos
+                </legend>
+
+                <div>
+                    <section>
+                        <label>Nombre</label>
+                        <input name="nombre" type="text" placeholder="Nombre">
+                    </section>
+
+                    <section>
+                        <label>Apellido</label>
+                        <input name="apellido" type="text" placeholder="Apellido">
+                    </section>
+
+                    <section>
+                        <label>Email</label>
+                        <input name="email" type="email" placeholder="Email">
+                    </section>
+
+                    <section>
+                        <label>Teléfono</label>
+                        <input name="telefono" type="tel" placeholder="Tu teléfono">
+                    </section>
+
+                    <section>
+                        <textarea name="descripcion" cols="50" rows="20" placeholder="Descripción"></textarea>
+                    </section>
+
+                    <section>
+                        <input type="submit" value="ENVIAR">
+                    </section>
+
+                </div>
+
+            </fieldset>
+>>>>>>> 649a0d3 (Añadiendo más estilo)
         </form>
 
     </section>

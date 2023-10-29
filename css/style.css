@@ -19,11 +19,8 @@
     /* Dándole un altura predeterminado */
     height: 525px;
 
-<<<<<<< HEAD
     /* Se podría poner height: 80%hv */
 
-=======
->>>>>>> 649a0d3 (Añadiendo más estilo)
     /* Dándole un ancho específico */
     width: 960px;
 
@@ -140,23 +137,14 @@
 }
 
 .misSkills-title {
-<<<<<<< HEAD
     text-align: center;
     padding: 25px;
-=======
-    position: absolute;
-    top: 0;
-    text-align: center;
-    padding: 15px;
-    left: 390px;
->>>>>>> 649a0d3 (Añadiendo más estilo)
     color: #26CC4B;
     font-size: 36px;
 }
 
 
 .wraper-mis-skills {
-<<<<<<< HEAD
 
     align-items: stretch;
     display: grid;
@@ -167,27 +155,13 @@
 
     /* Padding */
     padding: 0 60px;
-=======
-    position: absolute;
-    /* Divide en 3 columnas */
-    columns: 2;
-    /* Espacio entre las columnas */
-    column-gap: 220px;
-    top: 60px;
->>>>>>> 649a0d3 (Añadiendo más estilo)
 }
 
 .wraper-mis-skills-elemento {
     /* Espacio entre elementos verticalmente*/
-<<<<<<< HEAD
     /* margin-bottom: 20px; */
     /* Espacio entre elementos horizontalmente */
     /* margin-left: 40px; */
-=======
-    margin-bottom: 20px;
-    /* Espacio entre elementos horizontalmente */
-    margin-left: 40px;
->>>>>>> 649a0d3 (Añadiendo más estilo)
     padding: 10px;
 }
 
@@ -208,17 +182,11 @@ progress[value] {
 progress[value]::-webkit-progress-bar {
     border-radius: 10px;
     background: rgb(255, 253, 253);
-    height: 20px;
-    width: 403px;
 }
 
 progress[value]::-webkit-progress-value {
     border-radius: 20px;
     background: #57EFF9;
-<<<<<<< HEAD
-=======
-    height: 20px;
->>>>>>> 649a0d3 (Añadiendo más estilo)
 }
 
 /* Section Portafolio */
@@ -231,23 +199,13 @@ progress[value]::-webkit-progress-value {
 }
 
 .portafolio-title {
-<<<<<<< HEAD
     text-align: center;
     padding: 25px;
     color: #00AD84;
-=======
-    position: absolute;
-    top: 0;
-    text-align: center;
-    padding: 15px;
-    left: 390px;
-    color:  #00AD84;
->>>>>>> 649a0d3 (Añadiendo más estilo)
     font-size: 36px;
 }
 
 .wraper-portafolio {
-<<<<<<< HEAD
 
     align-items: stretch;
 
@@ -264,21 +222,6 @@ progress[value]::-webkit-progress-value {
 
 .wraper-portafolio-elemento {
     width: 100%;
-=======
-    position: absolute;
-    /* Divide en 3 columnas */
-    columns: 4;
-    /* Espacio entre las columnas */
-    column-gap: 1px;
-    top: 100px;
-}
-
-.wraper-portafolio-elemento {
-    /* Espacio entre elementos verticalmente*/
-    margin-bottom: 20px;
-    /* Espacio entre elementos horizontalmente */
-    margin-left: 45px;
->>>>>>> 649a0d3 (Añadiendo más estilo)
     padding: 10px;
 }
 
@@ -286,21 +229,15 @@ progress[value]::-webkit-progress-value {
 .portafolio img {
     width: 160px;
     height: 100px;
-<<<<<<< HEAD
     /* Dándole un borde a las imágenes */
     border: 3px solid white;
-=======
->>>>>>> 649a0d3 (Añadiendo más estilo)
 }
 
 .clientes img {
     width: 178px;
     height: 69px;
-<<<<<<< HEAD
     /* Dándole un borde a las imágenes */
     border: 3px solid white;
-=======
->>>>>>> 649a0d3 (Añadiendo más estilo)
 }
 
 /* Section  Cliente*/
@@ -313,7 +250,6 @@ progress[value]::-webkit-progress-value {
 }
 
 .clientes-title {
-<<<<<<< HEAD
     text-align: center;
     padding: 25px;
     font-size: 36px;
@@ -337,33 +273,6 @@ progress[value]::-webkit-progress-value {
 .wraper-clientes-elemento {
     padding: 10px;
     width: 100%;
-=======
-    position: absolute;
-    top: 0;
-    text-align: center;
-    padding: 15px;
-    left: 390px;
-    color: #ADFF28;
-    font-size: 36px;
-}
-
-.wraper-clientes {
-    position: absolute;
-    /* Divide en 3 columnas */
-    columns: 4;
-    /* Espacio entre las columnas */
-    column-gap: 10px;
-    top: 100px;
-    left: 35px;
-}
-
-.wraper-clientes-elemento {
-    /* Espacio entre elementos verticalmente*/
-    margin-bottom: 20px;
-    /* Espacio entre elementos horizontalmente */
-    margin-left: 10px;
-    padding: 10px;
->>>>>>> 649a0d3 (Añadiendo más estilo)
 }
 
 /* Section Contacto*/
@@ -376,7 +285,6 @@ progress[value]::-webkit-progress-value {
 }
 
 .contacto-title {
-<<<<<<< HEAD
     text-align: center;
     padding: 25px;
     font-size: 36px;
@@ -422,12 +330,4 @@ progress[value]::-webkit-progress-value {
     text-align: center;
     width: 759px;
     height: 112px;
-
-    position: absolute;
-    top: 0;
-    text-align: center;
-    padding: 15px;
-    left: 390px;
-    color: #FF1B1B;
-    font-size: 36px;
 }

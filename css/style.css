@@ -19,6 +19,11 @@
     /* Dándole un altura predeterminado */
     height: 525px;
 
+<<<<<<< HEAD
+=======
+    /* Se podría poner height: 80%hv */
+
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
     /* Dándole un ancho específico */
     width: 960px;
 
@@ -135,30 +140,54 @@
 }
 
 .misSkills-title {
+<<<<<<< HEAD
     position: absolute;
     top: 0;
     text-align: center;
     padding: 15px;
     left: 390px;
+=======
+    text-align: center;
+    padding: 25px;
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
     color: #26CC4B;
     font-size: 36px;
 }
 
 
 .wraper-mis-skills {
+<<<<<<< HEAD
     position: absolute;
     /* Divide en 3 columnas */
     columns: 2;
     /* Espacio entre las columnas */
     column-gap: 220px;
     top: 60px;
+=======
+
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Espacio entre las columnas horizontalmente */
+    column-gap: 10px;
+
+    /* Padding */
+    padding: 0 60px;
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
 }
 
 .wraper-mis-skills-elemento {
     /* Espacio entre elementos verticalmente*/
+<<<<<<< HEAD
     margin-bottom: 20px;
     /* Espacio entre elementos horizontalmente */
     margin-left: 40px;
+=======
+    /* margin-bottom: 20px; */
+    /* Espacio entre elementos horizontalmente */
+    /* margin-left: 40px; */
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
     padding: 10px;
 }
 
@@ -172,6 +201,7 @@
 progress[value] {
     /* Se le quita la apariencia predeterminada del elemento */
     appearance: none;
+    width: 100%;
 }
 
 /* Modificación del formato */
@@ -185,7 +215,10 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value {
     border-radius: 20px;
     background: #57EFF9;
+<<<<<<< HEAD
     height: 20px;
+=======
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
 }
 
 /* Section Portafolio */
@@ -198,16 +231,23 @@ progress[value]::-webkit-progress-value {
 }
 
 .portafolio-title {
+<<<<<<< HEAD
     position: absolute;
     top: 0;
     text-align: center;
     padding: 15px;
     left: 390px;
     color:  #00AD84;
+=======
+    text-align: center;
+    padding: 25px;
+    color: #00AD84;
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
     font-size: 36px;
 }
 
 .wraper-portafolio {
+<<<<<<< HEAD
     position: absolute;
     /* Divide en 3 columnas */
     columns: 4;
@@ -221,6 +261,24 @@ progress[value]::-webkit-progress-value {
     margin-bottom: 20px;
     /* Espacio entre elementos horizontalmente */
     margin-left: 45px;
+=======
+
+    align-items: stretch;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* Espacio entre las columnas horizontalmente */
+    column-gap: 10px;
+
+    /* Padding */
+    padding: 0 60px;
+
+}
+
+.wraper-portafolio-elemento {
+    width: 100%;
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
     padding: 10px;
 }
 
@@ -228,11 +286,21 @@ progress[value]::-webkit-progress-value {
 .portafolio img {
     width: 160px;
     height: 100px;
+<<<<<<< HEAD
+=======
+    /* Dándole un borde a las imágenes */
+    border: 3px solid white;
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
 }
 
 .clientes img {
     width: 178px;
     height: 69px;
+<<<<<<< HEAD
+=======
+    /* Dándole un borde a las imágenes */
+    border: 3px solid white;
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
 }
 
 /* Section  Cliente*/
@@ -245,6 +313,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .clientes-title {
+<<<<<<< HEAD
     position: absolute;
     top: 0;
     text-align: center;
@@ -270,6 +339,31 @@ progress[value]::-webkit-progress-value {
     /* Espacio entre elementos horizontalmente */
     margin-left: 10px;
     padding: 10px;
+=======
+    text-align: center;
+    padding: 25px;
+    font-size: 36px;
+
+    color: #ADFF28;
+}
+
+.wraper-clientes {
+    align-items: stretch;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* Espacio entre las columnas horizontalmente */
+    column-gap: 10px;
+
+    /* Padding */
+    padding: 0 60px;
+}
+
+.wraper-clientes-elemento {
+    padding: 10px;
+    width: 100%;
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
 }
 
 /* Section Contacto*/
@@ -282,6 +376,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .contacto-title {
+<<<<<<< HEAD
     position: absolute;
     top: 0;
     text-align: center;
@@ -289,4 +384,51 @@ progress[value]::-webkit-progress-value {
     left: 390px;
     color: #FF1B1B;
     font-size: 36px;
+=======
+    text-align: center;
+    padding: 25px;
+    font-size: 36px;
+    color: #FF1B1B;
+}
+
+/* Sección Contacto */
+
+.form-contacto {
+    align-items: stretch;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Espacio entre las columnas horizontalmente */
+    column-gap: 10px;
+
+    /* Padding */
+    padding: 0 60px;
+}
+
+.form-contacto-nombre {
+    width: 363px;
+    height: 59px;
+}
+
+.form-contacto-apellido {
+    width: 363px;
+    height: 59px;
+}
+
+.form-contacto-email {
+    width: 363px;
+    height: 59px;
+}
+
+.form-contacto-telefono {
+    width: 363px;
+    height: 59px;
+}
+
+.form-contacto-descripcion {
+    text-align: center;
+    width: 759px;
+    height: 112px;
+>>>>>>> f0290b382fa130693cf51ea1e0102373b3e1b534
 }

@@ -101,44 +101,44 @@
 
         <h2 class="portafolio-title">Portafolio</h2>
 
-        <div>
+        <div class="wraper-portafolio">
             <!-- Elemento 1 -->
-            <section>
+            <section class="wraper-portafolio-elemento">
                 <img src="img/portafolio1.jpg" alt="Imagen de Portafolio 1">
             </section>
 
             <!-- Elemento 2 -->
-            <section>
+            <section class="wraper-portafolio-elemento">
                 <img src="img/portafolio2.png" alt="Imagen de Portafolio 2">
             </section>
 
             <!-- Elemento 3 -->
-            <section>
+            <section class="wraper-portafolio-elemento">
                 <img src="img/portafolio3.png" alt="Imagen de Portafolio 3">
             </section>
 
             <!-- Elemento 4 -->
-            <section>
+            <section class="wraper-portafolio-elemento">
                 <img src="img/portafolio4.png" alt="Imagen de Portafolio 4">
             </section>
 
             <!-- Elemento 5 -->
-            <section>
+            <section class="wraper-portafolio-elemento">
                 <img src="img/portafolio5.png" alt="Imagen de Portafolio 5">
             </section>
 
             <!-- Elemento 6 -->
-            <section>
+            <section class="wraper-portafolio-elemento">
                 <img src="img/portafolio6.png" alt="Imagen de Portafolio 6">
             </section>
 
             <!-- Elemento 7 -->
-            <section>
+            <section class="wraper-portafolio-elemento">
                 <img src="img/portafolio7.png" alt="Imagen de Portafolio 7">
             </section>
 
             <!-- Elemento 8 -->
-            <section>
+            <section class="wraper-portafolio-elemento">
                 <img src="img/portafolio8.png" alt="Imagen de Portafolio 8">
             </section>
 
@@ -148,27 +148,27 @@
 
     <!-- Bloque 5: Clientes -->
     <section class="clientes">
-        <h2>Clientes</h2>
+        <h2 class="clientes-title">Clientes</h2>
 
-        <div>
+        <div class="wraper-clientes">
 
             <!-- Elemento 1 -->
-            <section>
+            <section class="wraper-clientes-elemento">
                 <img src="img/cliente1.png" alt="Imagen de Cliente 1" width="300">
             </section>
 
             <!-- Elemento 2 -->
-            <section>
+            <section class="wraper-clientes-elemento">
                 <img src="img/cliente2.png" alt="Imagen de Cliente 2" width="300">
             </section>
 
             <!-- Elemento 3 -->
-            <section>
+            <section class="wraper-clientes-elemento">
                 <img src="img/cliente3.png" alt="Imagen de Cliente 3" width="300">
             </section>
 
             <!-- Elemento 4 -->
-            <section>
+            <section class="wraper-clientes-elemento">
                 <img src="img/cliente4.png" alt="Imagen de Cliente 4" width="300">
             </section>
 
@@ -177,48 +177,19 @@
     </section>
 
     <!-- Bloque 6: Contacto -->
-    <section>
+    <section class="contacto">
 
-        <h2>Contacto</h2>
+        <h2 class="contacto-title">Contacto</h2>
 
-        <form action="/action.php" method="post">
-            <fieldset>
-                <legend>
-                    Contáctame llenando todos los campos
-                </legend>
-
-                <div>
-                    <section>
-                        <label>Nombre</label>
-                        <input name="nombre" type="text" placeholder="Nombre">
-                    </section>
-
-                    <section>
-                        <label>Apellido</label>
-                        <input name="apellido" type="text" placeholder="Apellido">
-                    </section>
-
-                    <section>
-                        <label>Email</label>
-                        <input name="email" type="email" placeholder="Email">
-                    </section>
-
-                    <section>
-                        <label>Teléfono</label>
-                        <input name="telefono" type="tel" placeholder="Tu teléfono">
-                    </section>
-
-                    <section>
-                        <textarea name="descripcion" cols="50" rows="20" placeholder="Descripción"></textarea>
-                    </section>
-
-                    <section>
-                        <input type="submit" value="ENVIAR">
-                    </section>
-
-                </div>
-
-            </fieldset>
+        <form class="form-contacto">
+            <input class="form-contacto-nombre" type="text" placeholder="Nombre">
+            <input class="form-contacto-apellido" type="text" placeholder="Apellido">
+            <input class="form-contacto-email" type="email" placeholder="Email">
+            <input class="form-contacto-telefono" type="tel" placeholder="Teléfono">
+            <br>
+            <textarea class="form-contacto-descripcion" cols="30" rows="10" placeholder="Descripción"></textarea>
+            <br>
+            <button class="form-contacto-enviar">ENVIAR</button>
         </form>
 
     </section>

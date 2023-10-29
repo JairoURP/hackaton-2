@@ -19,8 +19,13 @@
     /* Dándole un altura predeterminado */
     height: 525px;
 
+    /* Se podría poner height: 80%hv */
+
     /* Dándole un ancho específico */
     width: 960px;
+
+    /* Utilizando la función clamp */
+    height: clamp(200px, 80vw, 80vh);
 }
 
 /* Diferencias entre relative y absolute: */
@@ -132,30 +137,31 @@
 }
 
 .misSkills-title {
-    position: absolute;
-    top: 0;
     text-align: center;
-    padding: 15px;
-    left: 390px;
+    padding: 25px;
     color: #26CC4B;
     font-size: 36px;
 }
 
 
 .wraper-mis-skills {
-    position: absolute;
-    /* Divide en 3 columnas */
-    columns: 2;
-    /* Espacio entre las columnas */
-    column-gap: 220px;
-    top: 60px;
+
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Espacio entre las columnas horizontalmente */
+    column-gap: 10px;
+
+    /* Padding */
+    padding: 0 60px;
 }
 
 .wraper-mis-skills-elemento {
     /* Espacio entre elementos verticalmente*/
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     /* Espacio entre elementos horizontalmente */
-    margin-left: 40px;
+    /* margin-left: 40px; */
     padding: 10px;
 }
 
@@ -169,27 +175,21 @@
 progress[value] {
     /* Se le quita la apariencia predeterminada del elemento */
     appearance: none;
+    width: 100%;
 }
 
 /* Modificación del formato */
 progress[value]::-webkit-progress-bar {
     border-radius: 10px;
     background: rgb(255, 253, 253);
-    height: 20px;
-    width: 403px;
 }
 
 progress[value]::-webkit-progress-value {
     border-radius: 20px;
     background: #57EFF9;
-    height: 20px;
 }
 
-/* Tamaño predeterminado de imágenes en Portafolio y Clientes */
-.portafolio img {
-    width: 140px;
-    height: 92px;
-}
+/* Section Portafolio */
 
 .portafolio {
     width: 960px;
@@ -199,12 +199,135 @@ progress[value]::-webkit-progress-value {
 }
 
 .portafolio-title {
-    position:absolute;
+    text-align: center;
+    padding: 25px;
+    color: #00AD84;
     font-size: 36px;
+}
+
+.wraper-portafolio {
+
+    align-items: stretch;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* Espacio entre las columnas horizontalmente */
+    column-gap: 10px;
+
+    /* Padding */
+    padding: 0 60px;
+
+}
+
+.wraper-portafolio-elemento {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Tamaño predeterminado de imágenes en Portafolio y Clientes */
+.portafolio img {
+    width: 160px;
+    height: 100px;
+    /* Dándole un borde a las imágenes */
+    border: 3px solid white;
 }
 
 .clientes img {
     width: 178px;
     height: 69px;
+    /* Dándole un borde a las imágenes */
+    border: 3px solid white;
 }
 
+/* Section  Cliente*/
+
+.clientes {
+    width: 960px;
+    background-color: #3F4E62;
+    height: 258px;
+    position: relative;
+}
+
+.clientes-title {
+    text-align: center;
+    padding: 25px;
+    font-size: 36px;
+
+    color: #ADFF28;
+}
+
+.wraper-clientes {
+    align-items: stretch;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    /* Espacio entre las columnas horizontalmente */
+    column-gap: 10px;
+
+    /* Padding */
+    padding: 0 60px;
+}
+
+.wraper-clientes-elemento {
+    padding: 10px;
+    width: 100%;
+}
+
+/* Section Contacto*/
+
+.contacto {
+    width: 960px;
+    background-color: #1687A0;
+    height: 578px;
+    position: relative;
+}
+
+.contacto-title {
+    text-align: center;
+    padding: 25px;
+    font-size: 36px;
+    color: #FF1B1B;
+}
+
+/* Sección Contacto */
+
+.form-contacto {
+    align-items: stretch;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /* Espacio entre las columnas horizontalmente */
+    column-gap: 10px;
+
+    /* Padding */
+    padding: 0 60px;
+}
+
+.form-contacto-nombre {
+    width: 363px;
+    height: 59px;
+}
+
+.form-contacto-apellido {
+    width: 363px;
+    height: 59px;
+}
+
+.form-contacto-email {
+    width: 363px;
+    height: 59px;
+}
+
+.form-contacto-telefono {
+    width: 363px;
+    height: 59px;
+}
+
+.form-contacto-descripcion {
+    text-align: center;
+    width: 759px;
+    height: 112px;
+}

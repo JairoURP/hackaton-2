@@ -422,7 +422,7 @@ progress[value]::-webkit-progress-value {
     text-align: center;
     width: 759px;
     height: 112px;
-=======
+
     position: absolute;
     top: 0;
     text-align: center;
@@ -430,5 +430,4 @@ progress[value]::-webkit-progress-value {
     left: 390px;
     color: #FF1B1B;
     font-size: 36px;
->>>>>>> 649a0d3 (Añadiendo más estilo)
 }
